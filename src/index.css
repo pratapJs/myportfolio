@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default VS Code Theme */
+  --bg-color: #1e1e1e;
+  --sidebar-color: #252526;
+  --activity-bar-color: #333333;
+  --status-bar-color: #007acc;
+  --tab-active-color: #1e1e1e;
+  --tab-inactive-color: #2d2d2d;
+  --text-color: #d4d4d4;
+  --comment-color: #6a9955;
+  --keyword-color: #569cd6;
+  --string-color: #ce9178;
+  --function-color: #dcdcaa;
+  --number-color: #b5cea8;
+  --line-num-color: #858585;
+  --selection-color: #264f78;
+  --input-bg-color: #3c3c3c;
+
+  /* Font Sizes */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+}
+
+/* Light Theme */
+.theme-light {
+  --bg-color: #ffffff;
+  --sidebar-color: #f3f3f3;
+  --activity-bar-color: #2c2c2c;
+  --status-bar-color: #007acc;
+  --tab-active-color: #ffffff;
+  --tab-inactive-color: #ececec;
+  --text-color: #333333;
+  --comment-color: #008000;
+  --keyword-color: #0000ff;
+  --string-color: #a31515;
+  --function-color: #795e26;
+  --number-color: #098658;
+  --line-num-color: #2b91af;
+  --selection-color: #add6ff;
+  --input-bg-color: #ffffff;
+}
+
+/* High Contrast Theme */
+.theme-hc {
+  --bg-color: #000000;
+  --sidebar-color: #000000;
+  --activity-bar-color: #000000;
+  --status-bar-color: #000000;
+  --tab-active-color: #000000;
+  --tab-inactive-color: #000000;
+  --text-color: #ffffff;
+  --comment-color: #7ca668;
+  --keyword-color: #569cd6;
+  --string-color: #ce9178;
+  --function-color: #dcdcaa;
+  --number-color: #b5cea8;
+  --line-num-color: #ffffff;
+  --selection-color: #f6b93b;
+  --input-bg-color: #000000;
+}
+
+.theme-hc * {
+  border-color: #ffffff !important;
+}
+
+/* Font Size Modifiers */
+.text-large {
+  --font-size-sm: 1rem;
+  --font-size-base: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+}
+
+.text-xlarge {
+  --font-size-sm: 1.25rem;
+  --font-size-base: 1.5rem;
+  --font-size-lg: 1.75rem;
+  --font-size-xl: 2rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+.line-numbers {
+  font-family: 'Consolas', monospace;
+  color: var(--line-num-color);
+  text-align: right;
+  padding-right: 1rem;
+  user-select: none;
+}
