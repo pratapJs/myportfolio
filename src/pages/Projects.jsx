@@ -53,7 +53,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="p-8 max-w-6xl font-mono text-sm md:text-base text-vscode-text"
+            className="p-4 md:p-8 max-w-6xl font-mono text-sm md:text-base text-vscode-text"
         >
             <div className="text-gray-500 mb-6 font-mono text-sm">
              // My Projects.json

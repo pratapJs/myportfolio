@@ -7,7 +7,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="p-8 max-w-4xl font-mono text-sm md:text-base"
+            className="p-4 md:p-8 max-w-4xl font-mono text-sm md:text-base break-words"
         >
             <div className="text-gray-500 mb-4">/* <br />&nbsp;* About Me <br />&nbsp;* I am a dedicated professional with a background in IT and teaching.<br />&nbsp;*/</div>
 
