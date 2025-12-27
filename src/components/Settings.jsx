@@ -9,7 +9,7 @@ const Settings = ({ onClose }) => {
     const handleFontChange = (val) => setTheme({ ...theme, fontSize: val });
 
     return (
-        <div className="absolute bottom-12 left-12 w-64 bg-vscode-sidebar border border-gray-600 shadow-xl rounded-md z-50 text-vscode-text select-none">
+        <div className="fixed bottom-12 left-12 w-64 bg-vscode-sidebar border border-gray-600 shadow-xl rounded-md z-50 text-vscode-text select-none">
             <div className="flex justify-between items-center p-3 border-b border-gray-700">
                 <h3 className="font-bold text-sm">Settings</h3>
                 <X size={16} className="cursor-pointer hover:text-white" onClick={onClose} />

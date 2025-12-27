@@ -67,8 +67,6 @@ const Sidebar = () => {
                         <SettingsIcon size={24} color="#d4d4d4" />
                     </div>
 
-                    {/* Settings Modal Popover */}
-                    {showSettings && <Settings onClose={() => setShowSettings(false)} />}
                 </div>
             </div>
 
@@ -113,6 +111,8 @@ const Sidebar = () => {
                     </div>
                 </div>
             )}
+            {/* Settings Modal */}
+            {showSettings && <Settings onClose={() => setShowSettings(false)} />}
         </div>
     );
 };
